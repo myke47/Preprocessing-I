@@ -119,7 +119,7 @@ blockquote:before,
 blockquote:after,
 q:before,
 q:after {
-  content: '';
+  content: "";
   content: none;
 }
 table {
@@ -133,5 +133,169 @@ table {
 html,
 body {
   height: 100%;
+}
+div {
+  font-size: 16px;
+}
+img {
+  width: 100%;
+}
+.container {
+  display: flex;
+  flex-direction: column;
+  width: 900px;
+  margin: auto;
+  padding: 1%;
   background-color: lightgray;
+  border: solid 1px red;
+}
+.container .main-header {
+  display: flex;
+  flex-flow: row;
+  margin: auto;
+  padding: 1%;
+  width: 100%;
+  border: solid red 1px;
+}
+.container .main-nav {
+  display: flex;
+  flex-flow: nowrap;
+  width: 100%;
+  margin: auto;
+  padding: 1%;
+  justify-content: space-around;
+}
+.container .main-nav a {
+  display: flex;
+  flex-flow: nowrap;
+  justify-content: center;
+  text-decoration: none;
+  color: white;
+  font-size: 1.7em;
+  background-color: skyblue;
+  border: solid white 0.05em;
+  border-radius: 0.25em;
+  padding: 1%;
+  margin: auto;
+}
+.top-content {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  border: solid red 1px;
+  width: 100%;
+  margin: auto;
+  padding: 1.5%;
+}
+.top-content .intro {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 45%;
+  margin: auto;
+  border: solid red 1px;
+}
+.top-content h1 {
+  display: flex;
+  font-size: 1.7em;
+  color: white;
+  margin: 1.5%;
+  padding: 1.5%;
+  border: solid red 1px;
+}
+.top-content p {
+  display: flex;
+  margin: 1.5%;
+  padding: 1.5%;
+  border: solid red 1px;
+}
+.top-content button {
+  display: flex;
+  width: 150px;
+  margin: 1.5%;
+  padding: 1.5%;
+  font-size: 1.25em;
+  justify-content: center;
+  color: white;
+  background-color: skyblue;
+  border: solid white 0.05em;
+  border-radius: 0.25em;
+}
+.top-content .place {
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+  width: 45%;
+  padding: 1.5%;
+  border: solid red 1px;
+}
+.bottom-content {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  border: solid red 1px;
+  width: 100%;
+  margin: auto;
+  padding: 1.5%;
+}
+.bottom-content .skills {
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+  width: 45%;
+  border: solid red 1px;
+}
+.bottom-content .skills h2 {
+  font-size: 1.2em;
+}
+.bottom-content .skills p {
+  display: flex;
+}
+.bottom-content .history {
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+  width: 45%;
+  border: solid red 1px;
+}
+.bottom-content .history h2 {
+  font-size: 1.2em;
+}
+.bottom-content .history p {
+  display: flex;
+}
+.last-content {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  border: solid red 1px;
+  width: 100%;
+  margin: auto;
+  padding: 1.5%;
+}
+.last-content .reach-info {
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+  width: 45%;
+  border: solid red 1px;
+}
+.last-content .reach-info h2 {
+  font-size: 1.2em;
+}
+.last-content .reach-info p {
+  display: flex;
+}
+.last-content .form {
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+  width: 45%;
+  border: solid red 1px;
+}
+.last-content .form h2 {
+  font-size: 1.2em;
+}
+.last-content .form p {
+  display: flex;
 }

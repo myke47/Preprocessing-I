@@ -134,20 +134,13 @@ html,
 body {
   height: 100%;
 }
-div {
-  font-size: 16px;
-}
-img {
-  width: 100%;
-}
 .container {
   display: flex;
   flex-direction: column;
   width: 900px;
   margin: auto;
   padding: 1%;
-  background-color: lightgray;
-  border: solid 1px red;
+  background-color: lightblue;
 }
 .container .main-header {
   display: flex;
@@ -155,15 +148,15 @@ img {
   margin: auto;
   padding: 1%;
   width: 100%;
-  border: solid red 1px;
+  border: solid white 0.05em;
+  border-radius: 0.25em;
+  background-color: lightgrey;
 }
 .container .main-nav {
   display: flex;
   flex-flow: nowrap;
   width: 100%;
   margin: auto;
-  padding: 1%;
-  justify-content: space-around;
 }
 .container .main-nav a {
   display: flex;
@@ -171,8 +164,8 @@ img {
   justify-content: center;
   text-decoration: none;
   color: white;
-  font-size: 1.7em;
-  background-color: skyblue;
+  font-size: 1.5em;
+  background-color: lightblue;
   border: solid white 0.05em;
   border-radius: 0.25em;
   padding: 1%;
@@ -182,10 +175,12 @@ img {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
-  border: solid red 1px;
+  background-color: lightgrey;
+  border: solid white 0.05em;
+  border-radius: 0.25em;
   width: 100%;
   margin: auto;
-  padding: 1.5%;
+  padding: 1%;
 }
 .top-content .intro {
   display: flex;
@@ -193,31 +188,37 @@ img {
   align-items: flex-start;
   width: 45%;
   margin: auto;
-  border: solid red 1px;
+  padding: 1%;
+  background-color: lightblue;
+  border: solid white 0.05em;
+  border-radius: 0.25em;
 }
 .top-content h1 {
   display: flex;
-  font-size: 1.7em;
+  font-size: 1.5em;
   color: white;
-  margin: 1.5%;
-  padding: 1.5%;
+  margin: 1% auto;
+  padding: 1%;
   border: solid red 1px;
 }
 .top-content p {
   display: flex;
-  margin: 1.5%;
-  padding: 1.5%;
+  justify-content: center;
+  color: white;
+  margin: 1% auto;
+  padding: 1%;
+  line-height: 1.25;
   border: solid red 1px;
 }
 .top-content button {
   display: flex;
-  width: 150px;
-  margin: 1.5%;
+  margin: 1% auto;
   padding: 1.5%;
   font-size: 1.25em;
   justify-content: center;
+  align-self: center;
   color: white;
-  background-color: skyblue;
+  background-color: lightskyblue;
   border: solid white 0.05em;
   border-radius: 0.25em;
 }
@@ -227,13 +228,21 @@ img {
   margin: auto;
   width: 45%;
   padding: 1.5%;
-  border: solid red 1px;
+  background-color: lightblue;
+  border: solid white 0.05em;
+  border-radius: 0.25em;
+}
+.top-content .intro-img {
+  display: flex;
+  width: 100%;
 }
 .bottom-content {
   display: flex;
   flex-direction: row;
-  justify-content: space-around;
-  border: solid red 1px;
+  align-items: center;
+  background-color: lightgrey;
+  border: solid white 0.05em;
+  border-radius: 0.25em;
   width: 100%;
   margin: auto;
   padding: 1.5%;
@@ -242,33 +251,65 @@ img {
   display: flex;
   flex-direction: column;
   margin: auto;
+  padding: 1%;
   width: 45%;
-  border: solid red 1px;
+  background-color: lightblue;
+  border: solid white 0.05em;
+  border-radius: 0.25em;
 }
 .bottom-content .skills h2 {
+  display: flex;
+  margin: 1% auto;
   font-size: 1.2em;
 }
 .bottom-content .skills p {
   display: flex;
+  margin: 1% auto;
+}
+.bottom-content .skills ul {
+  display: flex;
+  flex-direction: column;
+  margin: 1% auto;
+}
+.bottom-content .skills li {
+  display: flex;
+  margin: 1% auto;
 }
 .bottom-content .history {
   display: flex;
   flex-direction: column;
   margin: auto;
+  padding: 1%;
   width: 45%;
-  border: solid red 1px;
+  background-color: lightblue;
+  border: solid white 0.05em;
+  border-radius: 0.25em;
 }
 .bottom-content .history h2 {
+  display: flex;
+  margin: 1% auto;
   font-size: 1.2em;
 }
 .bottom-content .history p {
   display: flex;
+  margin: 1% auto;
+}
+.bottom-content .history ul {
+  display: flex;
+  margin: 1% auto;
+  flex-direction: column;
+}
+.bottom-content .history li {
+  display: flex;
+  margin: 1% auto;
 }
 .last-content {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
-  border: solid red 1px;
+  background-color: lightgrey;
+  border: solid white 0.05em;
+  border-radius: 0.25em;
   width: 100%;
   margin: auto;
   padding: 1.5%;
@@ -276,26 +317,52 @@ img {
 .last-content .reach-info {
   display: flex;
   flex-direction: column;
-  margin: auto;
+  margin: 1% auto;
   width: 45%;
-  border: solid red 1px;
+  background-color: lightblue;
+  border: solid white 0.05em;
+  border-radius: 0.25em;
 }
 .last-content .reach-info h2 {
+  display: flex;
+  margin: 1% auto;
   font-size: 1.2em;
 }
 .last-content .reach-info p {
   display: flex;
 }
+.last-content .reach-info ul {
+  display: flex;
+}
+.last-content .reach-info .fas {
+  display: flex;
+  color: white;
+  margin: 1% auto;
+  font-size: 3.5em;
+}
 .last-content .form {
   display: flex;
   flex-direction: column;
-  margin: auto;
+  margin: 1% auto;
   width: 45%;
-  border: solid red 1px;
+  background-color: lightblue;
+  border: solid white 0.05em;
+  border-radius: 0.25em;
 }
 .last-content .form h2 {
+  display: flex;
+  margin: 1% auto;
   font-size: 1.2em;
 }
 .last-content .form p {
   display: flex;
+}
+.last-content .form ul {
+  display: flex;
+}
+.last-content .form .fas {
+  display: flex;
+  color: white;
+  margin: 1% auto;
+  font-size: 3.5em;
 }

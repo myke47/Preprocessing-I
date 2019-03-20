@@ -137,6 +137,9 @@ table {
 html,
 body {
   height: 100%;
+  font-family: @my-font-fam;
+  font-weight: @my-font-weight;
+  font-style: @font-style;
 }
 
 @nav-font: 1.5em;
@@ -149,7 +152,9 @@ body {
 @fa-color: rgb(58, 45, 238);
 @fa-size: 2.5em;
 @fa-margin: auto;
-
+@my-font-fam: 'Roboto Mono', 'monospace';
+@my-font-weight: 500;
+@font-style: normal;
 @primary-color: lightblue;
 @secondary-color: lightgrey;
 @standard-margin: 1% auto;
@@ -181,9 +186,11 @@ body {
   display: flex;
   flex-direction: column;
   width: 900px;
+  height: auto;
   margin: auto;
   padding: 1%;
   background-color: @primary-color;
+  border-top: solid 6px #008cff;
 
     @media (max-width: 500px) {
       display: flex;

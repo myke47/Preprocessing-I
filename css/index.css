@@ -133,6 +133,9 @@ table {
 html,
 body {
   height: 100%;
+  font-family: 'Roboto Mono', 'monospace';
+  font-weight: 500;
+  font-style: normal;
 }
 .contact-class {
   color: black;
@@ -156,9 +159,11 @@ body {
   display: flex;
   flex-direction: column;
   width: 900px;
+  height: auto;
   margin: auto;
   padding: 1%;
   background-color: lightblue;
+  border-top: solid 6px #008cff;
 }
 @media (max-width: 500px) {
   .container {
